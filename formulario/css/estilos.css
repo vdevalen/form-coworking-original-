@@ -94,14 +94,16 @@ main {
 	margin-bottom: 2rem;
 }
 
-.preguntas-formulario{
-	background: #fff;
-	padding: 40px;
-	border: 2px solid transparent;
-	border-radius: 15px;
-	cursor: pointer;
-	margin-bottom: 2rem;
-}
+/* .preguntas-formulario{
+	grid-template-columns: 1fr; /*solo uan columna las preguntas que se desplegan en ayuda*/
+	/* gap: 10px; /*espaciado*/
+	/* background: #fff;
+	padding: 20px;
+	display: flex; */ 
+	/* justify-content: space-between;
+	align-items: center; */
+
+	
 .contenedor-pregunta:hover { /*cuando pasa el cursos agg una sombra*/
 	box-shadow: var(--sombra);
 }
@@ -144,10 +146,27 @@ main {
 	transform: rotate(45deg); /*rotamos la img*/ 
 }
 
+.btn-azul{
+	background-color: #00369c;
+	padding: 0.4rem 1.5rem 0.6rem;
+	color: white;
+	border-radius: 1.2rem;
+	font-weight: 600;
+	border: none;
+	margin-top: 2rem;
+}
+
+.btn-azul:hover{
+	background-color: white;
+	color: #00369c;
+	border: 1px solid #00369c;
+}
+
 
 /*! =================================================*/
 /*! ============= digilenciar formulario  ============= */
 /*! =================================================*/
+
 #mensaje{
     display: none;
 }
