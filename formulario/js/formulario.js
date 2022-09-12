@@ -1,4 +1,3 @@
-
 function si_pc() {
     document.getElementById("mensaje").style.display = "none"; //none= esconde
     document.getElementById("modalidad").style.display = "block";  //block visible   
@@ -14,6 +13,7 @@ function no_pc() {
     document.getElementById("reqvpn").style.display = "none";   
     document.getElementById("personal").style.display = "none";
     document.getElementById("dispuesto").style.display = "none"; 
+    document.getElementById("mensaje_exito").style.display = "none";
 }
 
 function presencial(){

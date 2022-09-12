@@ -103,6 +103,42 @@ main {
 	/* justify-content: space-between;
 	align-items: center; */
 
+	.formulario-completo{
+		justify-content: center;
+		text-align: center;
+	}
+
+	.preguntas-formulario{
+		background-color: #fff;
+		border: 2px solid transparent;
+		border-radius: 15px;
+	}
+	.preguntas-formulario p{
+		justify-content: center;
+		margin-top: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.preguntas-formulario input{
+		margin-left: 1rem;
+		margin-right: 0.3rem;
+	}
+
+	/* .mensaje-no{
+		font-size: 1.5rem;
+		background-color: white;
+		padding: 2rem; 
+		border-radius: 15px;
+		border: 2px solid transparent;
+	} */
+
+	/* .mensaje-exito{
+		font-size: 1.5rem;
+		background-color: white;
+		padding: 2rem; 
+		border-radius: 15px;
+		border: 2px solid transparent;
+	} */
 	
 .contenedor-pregunta:hover { /*cuando pasa el cursos agg una sombra*/
 	box-shadow: var(--sombra);
@@ -154,6 +190,7 @@ main {
 	font-weight: 600;
 	border: none;
 	margin-top: 2rem;
+	cursor: pointer;
 }
 
 .btn-azul:hover{
@@ -167,12 +204,16 @@ main {
 /*! ============= digilenciar formulario  ============= */
 /*! =================================================*/
 
+.mensaje_exito{
+	display: none;
+}
+
 #mensaje{
     display: none;
 }
+
 #modalidad{
     display: none;
-
 }
 #presencial{
     display: none;
