@@ -5,17 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " ></script>
 	<link rel="stylesheet" href="/formulario/css/formulario.css">
 	<title>FORMULARIO</title>
 </head>
 <body>
-	<main> <!--etiqueta para todo el contenido-->
+	<main> 
 		<hgroup>
-			<h1 class="titulo">Metodos de trabajo</h1> <!--titulo principal-->
+			<h1 class="titulo">Metodos de trabajo</h1> 
 			<h5></h5>
 		</hgroup>
-<!-- Seccion de que son -->
-		<!--data categoria metodos de trabajo que es-->
 		<section class="categorias" id="categorias"> <!--section principal de categorias -->
 			<!--pregunnta-->
 			<div class="categoria activa" data-categoria="metodos" datatest-id="metodos"> <!--categoria activa indica que se pueban poner unos diseños del css-->
@@ -69,7 +68,6 @@
 </div>
 <!--MENSAJE DEL NO-->
 <label id="mensaje">
-	<p>Solicitar al lider que le asigne uno para completar el proceso de enrolamiento en la compañia</p> 
 </label>
 
 <div class="preguntas-formulario">
@@ -127,15 +125,16 @@
         <input onclick=""  type="radio" name="dis" required><span>No</span>
     </label>
 	</div>
+
 	<div class="botones">
-        <button type="button" class="btn-azul" data-bs-dismiss="modal">Enviar</button>
+        <button type="button" class="btn-azul boton-enviar-si" id="boton-enviar-si" onclick="boton_enviar_si()" data-bs-dismiss="modal" re>Enviar</button>
+
+		<button type="button" class="btn-azul boton-enviar-no" id="boton-enviar-no" onclick="boton_enviar_no()" data-bs-dismiss="modal">Regresar al home</button>
+		
 	</div>
 </div>
 </form>
-
 <!-- Preguntas Cuenta -->
-
-
 <div class="contenedor-preguntas" data-categoria="ayuda">
 	<div class="contenedor-pregunta">
 		<p class="pregunta">¿Como puedo acceder a mis pedidos? <img src="/formulario/img/suma.svg" alt="Abrir Respuesta" /></p>

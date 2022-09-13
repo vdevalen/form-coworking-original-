@@ -8,12 +8,14 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
 }
 
 body {
 	background: #f8fafb;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif; 
 }
+
 
 main {
 	max-width: 1000px;
@@ -182,7 +184,12 @@ main {
 	transform: rotate(45deg); /*rotamos la img*/ 
 }
 
-.btn-azul{
+.botones{
+	display: flex;
+	justify-content: center;
+}
+
+.btn-azul {
 	background-color: #00369c;
 	padding: 0.4rem 1.5rem 0.6rem;
 	color: white;
@@ -236,6 +243,14 @@ main {
 }
 #dispuesto{
     display: none;
+}
+
+#boton-enviar-si{
+	display: none;
+}
+
+#boton-enviar-no{
+	display: none;
 }
 
 /*! =================================================*/
